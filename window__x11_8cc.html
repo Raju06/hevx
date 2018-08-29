@@ -45,7 +45,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">window_x11.cc File Reference</div>  </div>
 </div><!--header-->
@@ -72,6 +74,30 @@ Macros</h2></td></tr>
 <tr class="memitem:ac779b88e1344c9b3606cf4aa4d61f13e"><td class="memItemLeft" align="right" valign="top"><a id="ac779b88e1344c9b3606cf4aa4d61f13e"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>STR</b>(r)&#160;&#160;&#160;case r: return #r</td></tr>
 <tr class="separator:ac779b88e1344c9b3606cf4aa4d61f13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a707d8c6c219d6ee11ebb23b180bf2c21"><td class="memItemLeft" align="right" valign="top"><a id="a707d8c6c219d6ee11ebb23b180bf2c21"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorHandler</b> (::Display *, ::XErrorEvent *ev) noexcept</td></tr>
+<tr class="separator:a707d8c6c219d6ee11ebb23b180bf2c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca12dff9c79568e8aee54614ff727eb"><td class="memItemLeft" align="right" valign="top"><a id="abca12dff9c79568e8aee54614ff727eb"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GrabErrorHandler</b> (::Display *) noexcept</td></tr>
+<tr class="separator:abca12dff9c79568e8aee54614ff727eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbdd06ad0a1069e60ba3e288c885d83"><td class="memItemLeft" align="right" valign="top"><a id="a6fbdd06ad0a1069e60ba3e288c885d83"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReleaseErrorHandler</b> (::Display *disp) noexcept</td></tr>
+<tr class="separator:a6fbdd06ad0a1069e60ba3e288c885d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6217d4c87c03b24ae7c84712c38605"><td class="memItemLeft" align="right" valign="top"><a id="a2c6217d4c87c03b24ae7c84712c38605"></a>
+static spdlog::logger *&#160;</td><td class="memItemRight" valign="bottom"><b>iris::wsi::sGetLogger</b> () noexcept</td></tr>
+<tr class="separator:a2c6217d4c87c03b24ae7c84712c38605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109d630e89bad428ecab964a4f3b8292"><td class="memItemLeft" align="right" valign="top"><a id="a109d630e89bad428ecab964a4f3b8292"></a>
+static Keys&#160;</td><td class="memItemRight" valign="bottom"><b>iris::wsi::TranslateKeySym</b> (::KeySym keysym)</td></tr>
+<tr class="separator:a109d630e89bad428ecab964a4f3b8292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:af81d0d327fc42a9de1dde1dd76a32b00"><td class="memItemLeft" align="right" valign="top"><a id="af81d0d327fc42a9de1dde1dd76a32b00"></a>
+static <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sErrorCode</b> {0}</td></tr>
+<tr class="separator:af81d0d327fc42a9de1dde1dd76a32b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classiris_1_1wsi_1_1Window_1_1Impl.html">iris::wsi::Window::Impl</a> definition for X11. </p>

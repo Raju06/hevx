@@ -44,7 +44,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">renderer.cc File Reference</div>  </div>
 </div><!--header-->
@@ -54,6 +56,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="renderer_8h_source.html">renderer.h</a>&quot;</code><br />
 <code>#include &quot;absl/base/macros.h&quot;</code><br />
+<code>#include &quot;absl/container/fixed_array.h&quot;</code><br />
 <code>#include &quot;absl/strings/str_cat.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="renderer_2error_8h_source.html">error.h</a>&quot;</code><br />
@@ -68,6 +71,48 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceiris_1_1Renderer"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceiris_1_1Renderer.html">iris::Renderer</a></td></tr>
 <tr class="memdesc:namespaceiris_1_1Renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">IRIS renderer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a1c5e3d8cb0516816ac3abffbdb5a2ab9"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/error/error_code.html">std::error_code</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceiris_1_1Renderer.html#a1c5e3d8cb0516816ac3abffbdb5a2ab9">iris::Renderer::ChoosePhysicalDevice</a> () noexcept</td></tr>
+<tr class="memdesc:a1c5e3d8cb0516816ac3abffbdb5a2ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose the Vulkan physical device - <b>MUST</b> only be called from <a class="el" href="namespaceiris_1_1Renderer.html#a0d1633acc94421565d0ef973c452e88d">Initialize</a>.  <a href="namespaceiris_1_1Renderer.html#a1c5e3d8cb0516816ac3abffbdb5a2ab9">More...</a><br /></td></tr>
+<tr class="separator:a1c5e3d8cb0516816ac3abffbdb5a2ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791cc7c25c35fc67cf178dc0f723e494"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/error/error_code.html">std::error_code</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceiris_1_1Renderer.html#a791cc7c25c35fc67cf178dc0f723e494">iris::Renderer::CreateDebugReportCallback</a> () noexcept</td></tr>
+<tr class="memdesc:a791cc7c25c35fc67cf178dc0f723e494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the callback for Vulkan Debug Reporting - <b>MUST</b> only be called from <a class="el" href="namespaceiris_1_1Renderer.html#a0d1633acc94421565d0ef973c452e88d">Initialize</a>.  <a href="namespaceiris_1_1Renderer.html#a791cc7c25c35fc67cf178dc0f723e494">More...</a><br /></td></tr>
+<tr class="separator:a791cc7c25c35fc67cf178dc0f723e494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa34b863855730bcf641089eed675699"><td class="memItemLeft" align="right" valign="top">static VKAPI_ATTR VkBool32 VKAPI_CALL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceiris_1_1Renderer.html#afa34b863855730bcf641089eed675699">iris::Renderer::DebugReportCallback</a> (VkDebugReportFlagsEXT flags, VkDebugReportObjectTypeEXT, <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint64_t</a>, <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>, <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/integer.html">std::int32_t</a>, char const *pLayerPrefix, char const *pMessage, void *)</td></tr>
+<tr class="memdesc:afa34b863855730bcf641089eed675699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for Vulkan Debug Reporting.  <a href="namespaceiris_1_1Renderer.html#afa34b863855730bcf641089eed675699">More...</a><br /></td></tr>
+<tr class="separator:afa34b863855730bcf641089eed675699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483c009ad4a29a168448f6bef3487e04"><td class="memItemLeft" align="right" valign="top"><a id="a483c009ad4a29a168448f6bef3487e04"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::DumpPhysicalDevice</b> (VkPhysicalDeviceProperties2 physicalDeviceProperties, absl::FixedArray&lt; VkQueueFamilyProperties2 &gt; queueFamilyProperties, absl::FixedArray&lt; VkExtensionProperties &gt; extensionProperties)</td></tr>
+<tr class="separator:a483c009ad4a29a168448f6bef3487e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d046e1faf08365409a1a3ddd81a4f98"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/error/error_code.html">std::error_code</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceiris_1_1Renderer.html#a8d046e1faf08365409a1a3ddd81a4f98">iris::Renderer::InitInstance</a> (gsl::not_null&lt; gsl::czstring&lt;&gt;&gt; appName, <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a> appVersion) noexcept</td></tr>
+<tr class="memdesc:a8d046e1faf08365409a1a3ddd81a4f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Vulkan Instance - <b>MUST</b> only be called from <a class="el" href="namespaceiris_1_1Renderer.html#a0d1633acc94421565d0ef973c452e88d">Initialize</a>.  <a href="namespaceiris_1_1Renderer.html#a8d046e1faf08365409a1a3ddd81a4f98">More...</a><br /></td></tr>
+<tr class="separator:a8d046e1faf08365409a1a3ddd81a4f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af80375fac0bfcf35864eeac9226bd7a6"><td class="memItemLeft" align="right" valign="top">static tl::expected&lt; <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>, <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/error/error_code.html">std::error_code</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceiris_1_1Renderer.html#af80375fac0bfcf35864eeac9226bd7a6">iris::Renderer::IsPhysicalDeviceGood</a> (VkPhysicalDevice device, gsl::span&lt; gsl::czstring&lt;&gt;&gt; extensionNames) noexcept</td></tr>
+<tr class="memdesc:af80375fac0bfcf35864eeac9226bd7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a specific physical device meets our requirements.  <a href="namespaceiris_1_1Renderer.html#af80375fac0bfcf35864eeac9226bd7a6">More...</a><br /></td></tr>
+<tr class="separator:af80375fac0bfcf35864eeac9226bd7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f88c899270f44036942c6c6e74fc99"><td class="memItemLeft" align="right" valign="top"><a id="ad9f88c899270f44036942c6c6e74fc99"></a>
+static spdlog::logger *&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::sGetLogger</b> () noexcept</td></tr>
+<tr class="separator:ad9f88c899270f44036942c6c6e74fc99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad83003dad9f55f0c63258bd74ac7a089"><td class="memItemLeft" align="right" valign="top"><a id="ad83003dad9f55f0c63258bd74ac7a089"></a>
+static VkDebugReportCallbackEXT&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::sDebugReportCallback</b> {VK_NULL_HANDLE}</td></tr>
+<tr class="separator:ad83003dad9f55f0c63258bd74ac7a089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02746a12f3c2e176c1fb7e64c1ccc405"><td class="memItemLeft" align="right" valign="top"><a id="a02746a12f3c2e176c1fb7e64c1ccc405"></a>
+static <a class="elRef" doxygen="/home/wng2/hevx/docs/cppreference-doxygen-web.tag.xml:http://en.cppreference.com/w/" href="http://en.cppreference.com/w/cpp/types/integer.html">std::uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::sGraphicsQueueFamilyIndex</b></td></tr>
+<tr class="separator:a02746a12f3c2e176c1fb7e64c1ccc405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a394e426a7d5c65ec7dd152da539e62b0"><td class="memItemLeft" align="right" valign="top"><a id="a394e426a7d5c65ec7dd152da539e62b0"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::sInitialized</b> {false}</td></tr>
+<tr class="separator:a394e426a7d5c65ec7dd152da539e62b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15ec93a1544e9c35dc54c28d08549bdf"><td class="memItemLeft" align="right" valign="top"><a id="a15ec93a1544e9c35dc54c28d08549bdf"></a>
+static VkInstance&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::sInstance</b> {VK_NULL_HANDLE}</td></tr>
+<tr class="separator:a15ec93a1544e9c35dc54c28d08549bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b044d34498a6539c1e381cadadd641"><td class="memItemLeft" align="right" valign="top"><a id="ae6b044d34498a6539c1e381cadadd641"></a>
+static VkPhysicalDevice&#160;</td><td class="memItemRight" valign="bottom"><b>iris::Renderer::sPhysicalDevice</b> {VK_NULL_HANDLE}</td></tr>
+<tr class="separator:ae6b044d34498a6539c1e381cadadd641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespaceiris_1_1Renderer.html">iris::Renderer</a> definition. </p>
